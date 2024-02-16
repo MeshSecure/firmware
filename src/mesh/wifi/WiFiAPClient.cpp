@@ -54,7 +54,7 @@ static void onNetworkConnected()
 
 #ifdef ARCH_ESP32
         // start mdns
-        if (!MDNS.begin("Meshtastic")) {
+        if (!MDNS.begin("MeshSecure")) {
             LOG_ERROR("Error setting up MDNS responder!\n");
         } else {
             LOG_INFO("mDNS responder started\n");
@@ -87,7 +87,7 @@ static void onNetworkConnected()
             }
             syslog.server(serverAddr, serverPort);
             syslog.deviceHostname(getDeviceName());
-            syslog.appName("Meshtastic");
+            syslog.appName("MeshSecure");
             syslog.defaultPriority(LOGLEVEL_USER);
             syslog.enable();
         }
@@ -213,7 +213,7 @@ bool initWifi()
         if (*wifiName) {
             uint8_t dmac[6];
             getMacAddr(dmac);
-            snprintf(ourHost, sizeof(ourHost), "Meshtastic-%02x%02x", dmac[4], dmac[5]);
+            snprintf(ourHost, sizeof(ourHost), "MeshSecure-%02x%02x", dmac[4], dmac[5]);
 
             WiFi.mode(WIFI_STA);
             WiFi.setHostname(ourHost);

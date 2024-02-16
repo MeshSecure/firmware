@@ -64,7 +64,7 @@ static void handleWebResponse()
 
 static void taskCreateCert(void *parameter)
 {
-    prefs.begin("MeshtasticHTTPS", false);
+    prefs.begin("MeshSecureHTTPS", false);
 
 #if 0
     // Delete the saved certs (used in debugging)

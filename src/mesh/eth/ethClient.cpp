@@ -56,7 +56,7 @@ static int32_t reconnectETH()
                 }
                 syslog.server(serverAddr, serverPort);
                 syslog.deviceHostname(getDeviceName());
-                syslog.appName("Meshtastic");
+                syslog.appName("MeshSecure");
                 syslog.defaultPriority(LOGLEVEL_USER);
                 syslog.enable();
             }

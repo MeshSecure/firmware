@@ -60,7 +60,7 @@ extern graphics::Screen *screen;
 // extern meshtastic::GPSStatus *gpsStatus;
 // extern meshtastic::NodeStatusHandler *nodeStatusHandler;
 
-// Return a human readable string of the form "Meshtastic_ab13"
+// Return a human readable string of the form "MeshSecure_ab13"
 const char *getDeviceName();
 
 extern uint32_t timeLastPowered;

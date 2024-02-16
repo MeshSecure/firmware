@@ -60,7 +60,7 @@ void portduinoCustomInit()
                                            {"config", 'c', "CONFIG_PATH", 0, "Full path of the .yaml config file to use."},
                                            {0}};
     static void *childArguments;
-    static char doc[] = "Meshtastic native build.";
+    static char doc[] = "MeshSecure native build.";
     static char args_doc[] = "...";
     static struct argp argp = {options, parse_opt, args_doc, doc, 0, 0, 0};
     const struct argp_child child = {&argp, OPTION_ARG_OPTIONAL, 0, 0};

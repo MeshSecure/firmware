@@ -2,7 +2,7 @@
 #include "Arduino.h"
 #include <esp_ota_ops.h>
 
-static const String MESHTASTIC_OTA_APP_PROJECT_NAME("Meshtastic-OTA");
+static const String MESHTASTIC_OTA_APP_PROJECT_NAME("MeshSecure-OTA");
 
 const esp_partition_t *BleOta::findEspOtaAppPartition()
 {
